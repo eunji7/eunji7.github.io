@@ -1,0 +1,264 @@
+@charset "UTF-8";
+
+
+
+body {
+    font-family: "BIZ UDPゴシック", "MS UI Gothic", sans-serif;
+    font-size: 20px;
+    color: #222222;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*logo*/
+#logo {
+    position: fixed;
+    background-color: #ffffff;
+    float: left;
+    padding: 30px 100% 20px 20px;
+    font-size: 2.1875rem;
+    font-weight: bolder;
+    color: #f4b3c2;
+}
+
+/*header*/
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+header .menu {
+    position: fixed;
+    right: 40px;
+    background-color: #ffffff;
+}
+
+
+header .menu ul {
+    overflow: hidden;
+}
+
+header .menu ul li {
+    list-style: none;
+    margin-left: 1em;
+    float: left;
+    padding: 0.5em;
+    cursor: pointer;
+    transition: all 0.5s;
+    border-bottom: solid transparent;
+}
+
+header .menu ul li a {
+    color: black;
+}
+
+header .menu ul li:hover {
+    border-bottom: 3px solid #f4b3c2;
+    border-radius: 10%;
+    color: #f4b3c2;
+    font-weight: bold;
+}
+
+header .menu ul li a:hover {
+    color: #f4b3c2;
+}
+
+
+/*Main*/
+.main, .main2 {
+    height: 1300px;
+    background-color: #f5f5f5;
+    border-radius: 4%;
+}
+
+/*About*/
+#About h2.title,
+#Question h2.title{
+    position: relative;
+    font-weight: bold;
+    -webkit-text-stroke: 2px #f4b3c2;
+    color: transparent;
+    font-size: 3rem;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+    transition: color 0.5s;
+    text-align: center;
+}
+
+#About:hover h2.title,
+#Question:hover h2.title{
+    color: #f4b3c2;
+    -webkit: 2px #f4b3c2;
+}
+
+#About h2.title::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 0px;
+    height: 5px;
+    background: #f4b3c2;
+}
+
+#About:hover h2.title::before {
+    transition: width 0s;
+    width: 165px;
+}
+
+
+#About:hover h2.title::before {
+    transition: width 0.5s;
+    width: 165px;
+}
+
+#About .About-list {
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+#About .info-img{
+    display: block;
+    float: left;
+    clear: both;
+    position: relative;
+    width: 45%;
+    height: 30%;
+    margin: 15px 0 50px 70px;
+
+}
+
+
+.right {
+    position: relative;
+    float: right;
+    width: 45%;
+}
+
+#About div.right .number,
+#About div.right .title {
+    font-weight: bold;
+}
+
+#About div.right .number {
+    font-size: 2.3rem;
+    color: #d3d3d3;
+}
+
+#About div.right .title {
+    font-size: 1.875rem;
+    font-weight: bold;
+}
+
+#About div.right .link {
+    position: relative;
+    display: inline-block;
+    border: 1px solid #ff8100;
+    color: #ff8100;
+    border-radius: 5px;
+    width: 200px;
+    margin: 0 20px 20px 0;
+    padding: 10px 15px;
+    transition: all 0.5s;
+}
+
+#About div.right .link:hover {
+    background: #ff8100;
+    color: #ffffff;
+}
+
+#About div.right .link::after {
+    position: absolute;
+    right: 30px;
+    content: '>>';
+    transition: right 0.5s;
+}
+
+#About div.right .link:hover::after {
+    position: absolute;
+    right: 20px;
+    content: '>>';
+}
+
+#About div.right .tag span {
+    display: inline-block;
+    border: 1px solid #cccccc;
+    color: #d3d3d3;
+    border-radius: 10px;
+    padding: 3px 5px;
+    margin: 7px 10px 20px 0;
+}
+
+#hr{clear: both;
+    padding: 7px;}
+
+
+/*manabu*/
+#manabu h2.title {
+    position: relative;
+    font-weight: bold;
+    -webkit-text-stroke: 2px #f4b3c2;
+    color: transparent;
+    font-size: 3rem;
+    margin: 1rem 0 3rem 0;
+    transition: color 0.5s;
+    text-align: center;
+}
+
+#manabu .manabu-img{
+    float: left;
+    width: 46.5%;
+    height: 46.5%;
+    margin: 1em;
+    
+}
+
+#manabu .bumon{
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 0 7em 30px 1em;
+    display: inline; 
+}
+
+#manabu .cntnt{
+    display: left;
+    font-size: 1.8rem;
+}
+
+
+#manabu .left{
+    float: left;
+}
+
+#manabu .right{
+    float: right;
+}
+.howMany, #cp{
+    text-align: center;
+    margin 0 0 1em 0;
+}
+
+/*Quiz*/
+.child #c1, #c2, #c3, #c4, #c5 {
+    text-align: center;
+    display: inline;
+    font-size: 25px;
+    margin: 20px 30px 0 45px;
+}
+
+footer p{
+    font-size: 15px;
+    background-color: #f4b3c2;
+    padding: 5px;
+    color: dimgrey;
+    text-align: center;
+    opacity: 0.5;
+}
